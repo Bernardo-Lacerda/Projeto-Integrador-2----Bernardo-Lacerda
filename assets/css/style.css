@@ -961,3 +961,39 @@ body {
 .notif-title { font-size: 14px; font-weight: 600; color: #222; margin-bottom: 4px; }
 .notif-message { font-size: 13px; color: #666; margin-bottom: 4px; }
 .notif-time { font-size: 12px; color: #aaa; }
+
+
+.error-container {
+    text-align: center;
+    padding: 48px 24px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.error-code {
+    font-size: 120px;
+    font-weight: 800;
+    color: #e0deff;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+.error-icon {
+    font-size: 64px;
+    margin-bottom: 16px;
+    color: #e53935;
+}
+
+.error-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.error-container p {
+    font-size: 15px;
+    color: #888;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}

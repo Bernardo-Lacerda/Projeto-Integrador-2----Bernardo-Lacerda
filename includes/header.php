@@ -47,6 +47,11 @@ $unread = mysqli_fetch_assoc(mysqli_query($conn,
             <a href="configuracoes.php" class="nav-item <?= basename($_SERVER['PHP_SELF']) == 'configuracoes.php' ? 'active' : '' ?>">
                 <span class="nav-icon">⚙</span> Configurações
             </a>
+            <?php if ($_SESSION['user_role'] === 'admin'): ?>
+<a href="admin.php" class="nav-item <?= basename($_SERVER['PHP_SELF']) == 'admin.php' ? 'active' : '' ?>">
+    <span class="nav-icon">⚙</span> Administração
+</a>
+<?php endif; ?>
         </nav>
         <a href="../logout.php" class="nav-item nav-logout">
             <span class="nav-icon">→</span> Sair
